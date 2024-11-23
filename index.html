@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Tutor</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <h1>JavaScript Tutor</h1>
+  <p>Forbered dig til eksamen med AI-genererede opgaver!</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/800px-Unofficial_JavaScript_logo_2.svg.png" alt="JavaScript logo" class="logo">
+</header>
+
+
+<main>
+  <section class="task-generator">
+    <h2>Generer en opgave</h2>
+    <label for="category">Vælg kategori:</label>
+    <select id="category">
+      <option value="dom">Arbejde med DOM'en</option>
+      <option value="visualization">Visualisering i JavaScript</option>
+      <option value="functions">Funktioner i JavaScript</option>
+      <option value="asynchronicity">Asynkronitet</option>
+      <option value="api">Hentning af data fra et API</option>
+    </select>
+
+    <button id="generateTask">Generer opgave</button>
+    <button id="resetTask" class="secondary">Nulstil</button>
+  </section>
+
+  <section class="output">
+    <h2>Opgave</h2>
+    <pre id="taskOutput">Klik på "Generer opgave" for at begynde.</pre>
+  </section>
+
+  <section class="user-input">
+    <h2>Din løsning</h2>
+    <textarea id="codeInput" placeholder="Skriv din kode her..."></textarea>
+    <button id="submitSolution">Send løsning</button>
+  </section>
+
+  <section class="feedback">
+    <h2>Feedback</h2>
+    <pre id="feedbackOutput">Feedback vil blive vist her.</pre>
+  </section>
+</main>
+
+<footer>
+  <p>2024 JavaScript Tutor</p>
+</footer>
+<script src="main.js"></script>
+</body>
+</html>
